@@ -1,3 +1,3 @@
 name: Ashish Rawat
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:title
