@@ -1,43 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 body {
-    margin: 60px auto;
-    width: 70%;
+    background: #fafafa;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+
+#header{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 250px;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 3.25em;
+    font-weight: normal;
+    letter-spacing: -0.035em;
+    line-height: 1em;
+}
+
+#header a {
+    transition: border-color 0.2s ease-in-out;
+    color: inherit;
+    outline: 0;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#header nav ul {
+    margin: 0;
     list-style: none;
-    font-weight: bold;
+    text-transform: uppercase;
 }
-nav ul li, footer ul li {
-    display: inline;
+
+#header nav ul li{
+    display: inline-block;
     margin-right: 20px;
 }
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
+.self-links{
+    font-family: "Source Sans Pro", "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-size: 1.4em;
+    margin: 1em 0 0 0;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.footer-social-icons {
+    margin: 1.5em 0 0 0;
+    font-size: 1.50em;
 }
 
-ul.posts li {
-    list-style: none;
+.self-links a:hover, .flipInX a:hover{
+    opacity: 0.60;
+}
+
+.social-icons li a{
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.social-icon:hover, .social-icon:active {
+    font-size: 150%; 
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+  -webkit-animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.footer-social-icons li{
+    -webkit-animation: fadeIn 1s;
+}
+
+.footer-social-icons li:nth-child(1) {
+        -webkit-animation-delay: 0.25s;
+}
+.footer-social-icons li:nth-child(2) {
+        -webkit-animation-delay: 0.5s;
+}
+.footer-social-icons li:nth-child(3) {
+        -webkit-animation-delay: 0.75s;
+}
+.footer-social-icons li:nth-child(4) {
+        -webkit-animation-delay: 1s;
 }
