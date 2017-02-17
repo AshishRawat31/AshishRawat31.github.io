@@ -19,16 +19,16 @@ description: Contact
       </div>
 <br/>
       <form action="https://api.staticman.net/v2/entry/AshishRawat31/ashishrawat31.github.io/master/contact" method="post">
-	<input name="options[origin]" type="hidden" value="https://ashishrawat31.github.io">
+	<input name="options[origin]" type="hidden" value="{{ site.url }}">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" name="fields[name]" placeholder="Name" required name="name">
+            <input class="w3-input w3-border" type="text" name="fields[name]" placeholder="Name" required/>
           </div>
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" name="fields[email]" placeholder="Email"  required name="email">
+            <input class="w3-input w3-border" type="text" name="fields[email]" placeholder="Email"  required/>
           </div><br/><br/>
         </div>
-        <textarea class="w3-input w3-border" type="text" name="fields[message]" placeholder="Message" required name="message" style="resize:none;"></textarea>
+        <textarea class="w3-input w3-border" type="text" name="fields[message]" placeholder="Message" required></textarea>
         <button class="w3-btn w3-black w3-right w3-padding w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
