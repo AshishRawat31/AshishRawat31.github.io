@@ -1,0 +1,39 @@
+---
+layout: default
+description: Contact
+---
+<header id="header">
+	<h3 style="text-align: center;"><a href="/contact">Contact Me</a></h3>
+</header>
+<div class="w3-content w3-container" id="contact">
+<div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom"><br/>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Delhi, IN<br/>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7042081693<br/>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Ashishrawat.dtu31@gmail.com<br/>
+      </div>
+<br/>
+      <form action="https://api.staticman.net/v2/entry/AshishRawat31/ashishrawat31.github.io/master/contact" method="post">
+	<input name="options[redirect]" type="hidden" value="https://ashishrawat31.github.io">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" name="fields[name]" placeholder="Name" required name="name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" name="fields[email]" placeholder="Email"  required name="email">
+          </div><br/><br/>
+        </div>
+        <textarea class="w3-input w3-border" type="text" name="fields[message]" placeholder="Message" required name="message" style="resize:none;"></textarea>
+        <button class="w3-btn w3-black w3-right w3-padding w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
