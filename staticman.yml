@@ -3,10 +3,10 @@ contact:
   branch: "master"
   commitMessage: "New Message"
   filename: "{@timestamp}"
-  format: 'yaml'
+  format: "yaml"
   generatedFields:
     date:
-      type: date
+      type: "date"
       options:
         format: "timestamp-seconds"
   moderation: false
