@@ -3,16 +3,5 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 url: "https://ashishrawat31.github.io"
 
-contact:
-  allowedFields: ["name", "email", "message"]
-  branch: contactme
-  commitMessage: "New Message"
-  filename: "{fields.email}"
-  format: yml
-  generatedFields:
-    date:
-      type: "date"
-      options:
-        format: "timestamp-seconds"
-  moderation: false
-  path: "_data/Messages"
+gems:
+  - jekyll-sitemap
