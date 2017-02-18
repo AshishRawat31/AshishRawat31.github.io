@@ -3,14 +3,14 @@ layout: default
 description: Blog
 ---
 <header id="header">
-	<h3><a href="/blog">Blog</a></h3>
+	<a href="/blog">Blog</a>
 </header>
-<div id="body">
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-
-	</ul>
+<div id="blog-style">
+	<div id="body">
+		<ul class="posts">
+			{% for post in site.posts %}
+			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
 </div>
