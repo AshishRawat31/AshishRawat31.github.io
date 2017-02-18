@@ -1,6 +1,5 @@
 contact:
   allowedFields: ["name", "email", "message"]
-  allowedOrigins: ["localhost", "ashishrawat31.github.io"]
   branch: "master"
   commitMessage: "New Message"
   filename: "{@timestamp}"
