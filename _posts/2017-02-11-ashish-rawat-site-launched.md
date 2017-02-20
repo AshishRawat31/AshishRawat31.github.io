@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ashish Rawat, Software Engineer"
+heading: "Ashish Rawat, Software Engineer"
 date: 2017-02-11
 ---
 

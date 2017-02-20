@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>{% if page.description == null %}
-				Post.Ashish Rawat	
-			{% else %}
-				{{ page.description }}.Ashish Rawat
-			{% endif %}
-		</title>
-		<!-- link to main stylesheet -->
+		<meta charset="utf-8">
+		<meta name="description" content="{{ page.description }}">
+		<meta name="author" content="Ashish Rawat">
+		<meta name="keywords" content="{{ page.keywords }}">
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>{{ page.title }} | Ashish Rawat</title>
+		
+		<!-- CSS -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/W3.css">
 		<link rel="stylesheet" type="text/css" href="/css/default.css">
+
+		<!--favicon-->
 		<link rel="shortcut icon" type="image/png" href="/css/images/favicon"/>
 	</head>
 	<body>
@@ -62,6 +66,7 @@
   <!-- End footer -->
   </footer>
 </div>
+<!--Google Maps-->
 <script>
 function myMap()
 {
@@ -79,6 +84,7 @@ function myMap()
   marker.setMap(map);
 }
 </script>
+<!-- Google Analytics -->
 <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCT9_LbsDj5orH2Da-meME5CgIQxHOxqpw&callback=myMap"></script>
 {% include analytics.html %}
 </body>
