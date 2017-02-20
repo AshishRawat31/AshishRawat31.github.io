@@ -1,82 +1,42 @@
-html,
-body {
+html, body {
    margin:0;
    padding:0;
    height:100%;
 }
-
-body{
-    font-family: "Montserrat", Helvetica, sans-serif;
-}
-
-a{
-    outline:none;
-}
-
-.w3-row-padding img {
-    margin-bottom: 12px;
-}
-			
+body{font-family: "Montserrat", Helvetica, sans-serif;}
+a{outline:none;}
+.w3-row-padding img {margin-bottom: 12px;}			
 /* Set the width of the sidenav to 120px */
-.w3-sidenav {
-    width: 150px;
-    background: #595959;
-}
-
+.w3-sidenav {width: 150px;background: #595959;}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {
-    #main {
-        margin-left: 0
-    }
-}
-			
+    #main {margin-left: 0;}
+}			
 #main{
     margin-left: 150px;/* Add a left margin to the "page content" that matches the width of the sidenav (120px) */
     min-height:100%;
     position:relative;
-}
-	
-#blog-style a{
-   text-decoration: none;
-   color: #428bca;
-}
-	
-#blog-style a:hover, #blog-style a:active{
-   opacity: 0.80;
-}
-
-#post-header{
-   background: #fafafb;
-   padding:10px 15%;
-}
-
+}	
+#blog-style a{text-decoration: none;color: #428bca;}	
+#blog-style a:hover, #blog-style a:active{opacity: 0.80;}
+#post-header{background: #fafafb;padding:10px 15%;}
 #post-header h1{
    font-family: 'Merriweather', Georgia, Times;
    font-weight: normal;
    font-size: 30px;
 }
-
 #header{
    background: #fafafb;
    padding:10px 15%;
    font-weight: normal;
 }
-
-#header a{
-   font-size: 35px;
-   text-decoration: none;
-}
-
-#header a:hover, #header a:active{
-   color: #428bca;
-}
-
+#header a{font-size: 35px;text-decoration: none;}
+#header a:hover, #header a:active{color: #428bca;}
 #body{
    padding: 10px 15% 80px 15%;
    font-family: "PT Serif", Georgia, "Times New Roman", serif;
    font-size: 20px;
 }
-
 #footer {
    text-align:center;
    position:absolute;
@@ -84,18 +44,38 @@ a{
    width:100%;
    background: #fafafb;
 }
-
-#footer p{
-   margin-top: 5px;
-   margin-bottom: 5px;
-}
-
+#footer p{margin-top: 5px;margin-bottom: 5px;}
 i.fa{
    font-size: 20px;
    margin-right: 5px;
    margin-bottom: 5px;
+}	
+.posts {list-style: none;}
+/* Share Bar */
+#share-bar {font-size: 20px;}
+/* Title */
+#share-bar h4 {margin-bottom: 10px;font-weight: 500;}
+/* All buttons */
+.share-buttons {margin-top: -10px;padding-left: 30px;
 }
-	
-.posts {
-   list-style: none;
+/* Each button */
+.share-button {
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    border: 1px solid #D3D6D2;
+    padding: 5px 10px 5px 10px;
+    width: calc( (100% - 50px) / 3 );
+    text-align: center;
+    color: white;
+    border-radius: 10px;
 }
+/* Facebook button */
+.fa-facebook {background-color: #3b5998;}
+.fa-facebook:hover {opacity:0.95;}
+/* Twitter button */
+.fa-twitter {background-color: #55acee;}
+.fa-twitter:hover {opacity:0.95;}
+/* Google-PLus button */
+.fa-google-plus {background-color: #dd4b39;}
+.fa-google-plus:hover {opacity:0.95;}
