@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 html { 
   background: url('images/bg.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -8,6 +8,7 @@ html {
   background-size: cover;
 }
 #header{
+  font-family: 'Roboto Slab',serif;
     margin: auto;
     position: absolute;
     top: 0;
@@ -17,10 +18,10 @@ html {
     width: 90%;
     height: 250px;
     text-align: center;
+    color: #454646;
 }
 #header h1 {
     margin: 0;
-    font-family: Georgia, serif;
     font-size: 3.25em;
     font-weight: normal;
     letter-spacing: -0.035em;
@@ -43,7 +44,6 @@ html {
     margin-right: 20px;
 }
 .self-links{
-    font-family: "Source Sans Pro", "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-size: 1.4em;
     margin: 1em 0 0 0;
 }
@@ -51,7 +51,7 @@ html {
     margin: 1.5em 0 0 0;
     font-size: 1.50em;
 }
-.self-links a:hover, .flipInX a:hover{opacity: 0.60;}
+.self-links a:hover, .flipInX a:hover{opacity: 0.80;}
 .list-item a{
     border: 2px solid;
     padding: 20px;

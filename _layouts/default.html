@@ -11,7 +11,6 @@
 		<title>{{ page.title }} | Ashish Rawat</title>
 		
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/W3.css">
 		<link rel="stylesheet" type="text/css" href="/css/default.css">
@@ -21,71 +20,115 @@
 	</head>
 	<body>
 
-<!-- Icon Bar (Sidenav - hidden on small screens) -->
-<nav class="w3-sidenav w3-center w3-small w3-hide-small">
-  <!-- Avatar image in top left corner -->
-  <img src="/css/images/Me.jpg" style="width:100%">
-  <a class="w3-padding-large w3-hover-black" href="/">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a class="w3-padding-large w3-hover-black" href="/about">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a class="w3-padding-large w3-hover-black" href="/blog">
-    <i class="fa fa-book w3-xxlarge"></i>
-    <p>BLOG</p>
-  </a>
-  <a class="w3-padding-large w3-hover-black" href="/contact">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+		<!-- Icon Bar (Sidenav - hidden on small screens) -->
+		<nav class="w3-sidenav w3-center w3-small w3-hide-small">
+			<!-- Avatar image in top left corner -->
+			<img src="/css/images/Me.jpg" style="width:100%">
+			<a class="w3-padding-large w3-hover-black" href="/">
+				<i class="fa fa-home w3-xxlarge"></i>
+				<p id="side-bar">HOME</p>
+			</a>
+			<a class="w3-padding-large w3-hover-black" href="/about">
+				<i class="fa fa-user w3-xxlarge"></i>
+				<p id="side-bar">ABOUT</p>
+			</a>
+			<a class="w3-padding-large w3-hover-black" href="/blog">
+				<i class="fa fa-book w3-xxlarge"></i>
+				<p id="side-bar">BLOG</p>
+			</a>
+			<a class="w3-padding-large w3-hover-black" href="/contact">
+				<i class="fa fa-envelope w3-xxlarge"></i>
+				<p id="side-bar">CONTACT</p>
+			</a>
+		</nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <ul class="w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <li class="w3-left" style="width:25% !important"><a href="/">HOME</a></li>
-    <li class="w3-left" style="width:25% !important"><a href="/about">ABOUT</a></li>
-    <li class="w3-left" style="width:25% !important"><a href="/blog">BLOG</a></li>
-    <li class="w3-left" style="width:25% !important"><a href="#contact">CONTACT</a></li>
-  </ul>
-</div>
+		<!-- Navbar on small screens (Hidden on medium and large screens) -->
+		<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+			<ul class="w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+				<li class="w3-left" style="width:25% !important"><a href="/">HOME</a></li>
+				<li class="w3-left" style="width:25% !important"><a href="/about">ABOUT</a></li>
+				<li class="w3-left" style="width:25% !important"><a href="/blog">BLOG</a></li>
+				<li class="w3-left" style="width:25% !important"><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
 
+		<div id="main">
+			{{ content }}
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="w3-medium">Powered by <a href="https://github.com/" target="_blank" class="w3-hover-text-blue" style="text-decoration: None">GitHub</a></p>
+				<a href="https://github.com/AshishRawat31"><i class="fa fa-github w3-hover-text-grey"></i></a>
+				<a href="https://in.linkedin.com/in/ashishrawat31"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+				<a href="https://AshishRawat31.github.io/blog/atom.xml"><i class="fa fa-rss w3-hover-text-orange"></i></a>
+			</footer>
+			<!-- End footer -->
+		</div>
 
+		<!--Google Maps-->
+		<script>
+		function myMap()
+		{
+			myCenter=new google.maps.LatLng(28.7041, 77.1025);
+			var mapOptions= {
+				center:myCenter,
+				zoom:12, scrollwheel: false, draggable: false,
+				mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+			var marker = new google.maps.Marker({ position: myCenter, });
+			marker.setMap(map);
+		}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCT9_LbsDj5orH2Da-meME5CgIQxHOxqpw&callback=myMap"></script>
+		<!--End Maps-->
 
-<div id="main">
-	{{ content }}
-  <!-- Footer -->
-  <footer id="footer">
-    <p class="w3-medium">Powered by <a href="https://github.com/" target="_blank" class="w3-hover-text-blue" style="text-decoration: None">GitHub</a></p>
-    <a href="https://github.com/AshishRawat31"><i class="fa fa-github w3-hover-text-grey"></i></a>
-    <a href="https://in.linkedin.com/in/ashishrawat31"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
-    <a href="https://AshishRawat31.github.io/blog/atom.xml"><i class="fa fa-rss w3-hover-text-orange"></i></a>
-  <!-- End footer -->
-  </footer>
-</div>
-<!--Google Maps-->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(28.7041, 77.1025);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+		<!--Contact-Form-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+		function validateEmail(emailField){
+			var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			if (reg.test(emailField.value) == false) 
+			{
+				alert('Invalid Email Address');
+				return false;
+			}
+			return true;
+		}
+		
+		function checkEmail() {
+			var email = document.getElementById('Email');
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if (!filter.test(email.value)) {
+				alert('Please provide a valid email address');
+				email.focus;
+				return false;
+			}
+			postContactToGoogle();
+		}
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-<!-- Google Analytics -->
-<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCT9_LbsDj5orH2Da-meME5CgIQxHOxqpw&callback=myMap"></script>
-{% include analytics.html %}
-</body>
+		function postContactToGoogle() {
+			var email = $('#Email').val();
+			var name = $('#Name').val();
+			var message = $('#Message').val();
+			$.ajax({
+				url: "https://docs.google.com/forms/d/e/1FAIpQLSc4OjyWNZozxa6v4rEu7O9WNUE7MqnRRJ6gIiVSalorvKj0Kg/formResponse",
+				data: { "entry.2005620554": name, "entry.1203005949": email, "entry.839337160": message},
+				type: "POST", dataType: "xml",
+				statusCode: {
+					0: function () {
+						window.location.replace("/regards");
+					},
+					200: function () {
+						window.location.replace("/regards");
+					}
+				}
+			});
+		}
+		</script>
+		<!--End Contact Form-->
+		
+		<!-- Google Analytics -->
+		{% include analytics.html %}
+	
+	</body>
 </html>
