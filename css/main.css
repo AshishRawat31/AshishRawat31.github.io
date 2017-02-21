@@ -1,14 +1,14 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 html { 
-  background: url('images/bg.jpg') no-repeat center center fixed; 
+  background: url('images/bg.jpg') no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #header{
-  font-family: 'Roboto Slab',serif;
+    font-family: 'Roboto Slab',serif;
     margin: auto;
     position: absolute;
     top: 0;
@@ -23,6 +23,13 @@ html {
 #header h1 {
     margin: 0;
     font-size: 3.25em;
+    font-weight: normal;
+    letter-spacing: -0.035em;
+    line-height: 1em;
+}
+#header h2 {
+    margin: 0;
+    font-size: 3.0em;
     font-weight: normal;
     letter-spacing: -0.035em;
     line-height: 1em;
@@ -49,7 +56,7 @@ html {
 }
 .footer-social-icons {
     margin: 1.5em 0 0 0;
-    font-size: 1.50em;
+    font-size: 1.4em;
 }
 .self-links a:hover, .flipInX a:hover{opacity: 0.80;}
 .list-item a{
@@ -58,6 +65,14 @@ html {
     border-radius: 100%;
 }
 .list-item:hover, .list-item:active {transform: scale(1.2);}
+
+.list-small a{
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 100%;
+}
+.list-small:hover, .list-small:active {transform: scale(1.2);}
+
 @keyframes flipInX {
   from {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);

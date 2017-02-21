@@ -5,18 +5,20 @@ description: Contact Information of Ashish Rawat, a Competent Developer, Delhi T
 keywords: Ashish Rawat contact, ashish contact, ashish phone, ashish rawat number, rawat number, rawat contact
 ---
 <header id="header">
+	<div style="padding: 15px 0 0 0;" class="w3-hide-large w3-hide-medium"></div>
 	<a href="/contact"><h1>Contact</h1></a>
 </header>
 <div id="blog-style">
-	<div class="w3-content w3-container" id="contact">
+	<div class="w3-content w3-container w3-hide-small" id="contact">
 		<div class="w3-row w3-padding-32 w3-section">
 			<div class="w3-col m4 w3-container">
 				<!-- Add Google Maps -->
-				<div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+				<div id="googleMap" class="w3-round-large w3-greyscale w3-hide-small" style="width:100%;height:400px;"></div>
 			</div>
 			<div class="w3-col m8 w3-container w3-section">
 				<div class="w3-large w3-margin-bottom">
-					<br/><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Delhi, IN<br/>
+					<br/>
+					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Delhi, IN<br/>
 					<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7042081693<br/>
 					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Ashishrawat.dtu31@gmail.com<br/>
 				</div>
@@ -33,6 +35,16 @@ keywords: Ashish Rawat contact, ashish contact, ashish phone, ashish rawat numbe
 				<button class="w3-btn w3-black w3-right w3-padding w3-section" type="submit" id="ButtonSubmit" onclick="checkEmail()" type="button" >
 				<i class="fa fa-paper-plane"></i> SEND MESSAGE</button>        
 			</div>
+		</div>
+	</div>
+	<div class="w3-content w3-container w3-hide-large w3-hide-medium">
+		<p>Leave me a note:</p>
+		<div class="w3-row w3-section padd">
+		<input class="w3-input w3-border" id= "Name" name="Name" type="text" placeholder="Name" required name="Name">
+		<input class="w3-input w3-border" id="Email" name="Email" type="text" placeholder="Email" onblur="validateEmail(this)" required name="Email">
+		<textarea class="w3-input w3-border" id="Message" name="Message" type="text" placeholder="Message" required name="Message"></textarea>
+		<button class="w3-btn w3-black w3-right w3-padding w3-section" type="submit" id="ButtonSubmit" onclick="checkEmail()" type="button" >
+		<i class="fa fa-paper-plane"></i> SEND MESSAGE</button>  
 		</div>
 	</div>
 </div>
